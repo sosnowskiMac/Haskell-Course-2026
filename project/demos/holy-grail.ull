@@ -1,0 +1,21 @@
+-- holy-grail.ull
+-- The "holy grail" web layout: header, footer, and a three-column middle.
+-- Header and footer are fixed-height rows.
+-- The middle row contains: nav | content | aside.
+
+window "HolyGrail" 1280 x 800 {
+  col {
+    -- Top navigation bar
+    box { height: 60px,  color: black }
+
+    -- Middle section: three columns
+    row {
+      box { width: 15%, color: green  }   -- left nav
+      box { width: 70%, color: white  }   -- main content
+      box { width: 15%, color: yellow }   -- right aside
+    }
+
+    -- Footer
+    box { height: 40px, color: black }
+  }
+}

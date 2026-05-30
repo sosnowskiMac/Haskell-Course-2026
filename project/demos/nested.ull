@@ -1,0 +1,29 @@
+-- nested.ull
+-- Shows deep nesting: a col containing rows, each row containing cols,
+-- each of those containing boxes. Good for verifying that (x, y) offsets
+-- compose correctly through multiple levels.
+
+window "Nested" 800 x 600 {
+  col {
+    row {
+      col {
+        box { height: 50%, color: red   }
+        box { height: 50%, color: green }
+      }
+      col {
+        box { height: 50%, color: blue   }
+        box { height: 50%, color: yellow }
+      }
+    }
+    row {
+      col {
+        box { height: 50%, color: yellow }
+        box { height: 50%, color: blue   }
+      }
+      col {
+        box { height: 50%, color: green }
+        box { height: 50%, color: red   }
+      }
+    }
+  }
+}

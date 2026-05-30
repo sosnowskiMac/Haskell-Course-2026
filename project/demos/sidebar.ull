@@ -1,0 +1,10 @@
+-- sidebar.ull
+-- Classic sidebar + main content layout.
+-- The sidebar is a fixed 200px wide; the content area takes the rest.
+
+window "Sidebar" 1024 x 768 {
+  row {
+    box { width: 200px, height: 100%, color: green }
+    box { width: 80%,   height: 100%, color: blue  }
+  }
+}

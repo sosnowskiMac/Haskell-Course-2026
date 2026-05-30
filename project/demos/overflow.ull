@@ -1,0 +1,12 @@
+-- overflow.ull
+-- Demonstrates the overflow-clamping rule.
+-- Three children each declare 50% width -- that is 150% total, exceeding
+-- the parent. The engine scales them proportionally: each ends up ~33%.
+
+window "Overflow" 900 x 400 {
+  row {
+    box { width: 50%, color: red    }
+    box { width: 50%, color: green  }
+    box { width: 50%, color: blue   }
+  }
+}

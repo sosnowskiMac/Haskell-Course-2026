@@ -1,0 +1,29 @@
+-- dashboard.ull
+-- A simple analytics dashboard:
+--   - Top bar (full width)
+--   - Two rows of stat cards (each row has 3 equal cards)
+--   - A wide chart area at the bottom
+
+window "Dashboard" 1200 x 900 {
+  col {
+    -- Top bar
+    box { height: 50px, color: black }
+
+    -- First row of stat cards
+    row {
+      box { width: 33%, height: 120px, color: blue   }
+      box { width: 33%, height: 120px, color: green  }
+      box { width: 34%, height: 120px, color: yellow }
+    }
+
+    -- Second row of stat cards
+    row {
+      box { width: 33%, height: 120px, color: red    }
+      box { width: 33%, height: 120px, color: blue   }
+      box { width: 34%, height: 120px, color: green  }
+    }
+
+    -- Chart panel at the bottom
+    box { height: 300px, color: white }
+  }
+}
